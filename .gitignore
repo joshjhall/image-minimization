@@ -1,3 +1,7 @@
+# Ignore the images directory
+# Can setup symbolic links to the correct source, and commit to a separate repo for consumption
+images
+
 # Logs
 logs
 *.log
