@@ -4,6 +4,7 @@ Image Minimization
 Clean up images for production by minimizing them, stripping unnecessary metadata, etc.
 
 
+
 Setup
 =====
 
@@ -36,8 +37,8 @@ Install Project Dependencies
 * `npm install` to install local node modules
 
 
-Create a Symbolic Links
------------------------
+Create Symbolic Links
+---------------------
 
 The `images/source` directory should be a symoblic link to your source directory.  This is typically a folder shared by the visual design team (e.g., Dropbox folder), and is the destination of visual file exports ready for engineering.
 
@@ -45,9 +46,16 @@ The `images/optimized` directory should be a symbolic link to your image reposit
 
 
 
-Grunt Tasks Available
-=====================
+Usage
+=====
 
 `grunt build` will process all of the files in `images/source`.  This also removes old files from the `images/optimized` directory.
 
 Non-image files will be copied using rsync.
+
+
+
+TODO list
+=========
+
+* Integrate into common build process
