@@ -64,8 +64,8 @@ module.exports = function (grunt) {
       },
       reset: {
         command: [
-          'rm -rf <%= imageTarget %>',
-          'mkdir <%= imageTarget %>'
+          'rm -rf <%= imageTarget %>*',
+          'touch <%= imageTarget %>.gitkeep'
         ].join('&&'),
         options: {
           stdout: true
@@ -96,7 +96,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   
   // Compile the iamges for production
-  grunt.registerTask('compile', ['shell:reset', 'imagemin:all', 'shell:syncOtherFiles', 'shell:cleanXaml']);
+  grunt.registerTask('build', ['shell:reset', 'imagemin:all', 'shell:syncOtherFiles', 'shell:cleanXaml']);
   
   // Check for new files
   grunt.registerTask('check', ['shell:check']);
