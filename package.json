@@ -1,0 +1,48 @@
+{
+  "name": "image-minimization",
+  "version": "0.3.0",
+  "description": "Used to minimize images before going into development. The basic grunt boilerplate came from Mark McDonnell (http://integralist.co.uk/Grunt-Boilerplate.html).",
+  "author": {
+    "name": "Joshua Hall",
+    "email": "josh@yaplabs.com",
+    "web": "http://yaplabs.com"
+  },
+  "contributors": [
+    {
+      "name": "Joshua Hall",
+      "email": "josh@yaplabs.com",
+      "web": "http://yaplabs.com"
+    }
+  ],
+  "main": "Gruntfile.js",
+  "engines": {
+    "node": "0.10.31",
+    "npm": "1.4.26"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com/joshjhall/image-minimization.git"
+  },
+  "keywords": [
+    "Grunt",
+    "Image minimization"
+  ],
+  "licenses": [{
+    "type": "GPLv2",
+    "url": "https://github.com/joshjhall/image-minimization/blob/master/LICENSE"
+  }],
+  "homepage": "https://github.com/joshjhall/image-minimization",
+  "bugs": {
+    "url" : "https://github.com/joshjhall/image-minimization/issues",
+    "email" : "josh@yaplabs.com"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4",
+    "grunt-contrib-imagemin": "~0.8",
+    "grunt-shell": "~1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
